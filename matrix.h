@@ -55,8 +55,5 @@ template <typename T> class Matrix {
 
 };
 
-#include "matrix.cpp"
-
-
 
 #endif /* MATRIX_H_ */

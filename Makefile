@@ -1,6 +1,8 @@
-CXXFLAGS =	-O0 -g -pg -Wall -fmessage-length=0
+CXXFLAGS =	-std=c++0x -O0 -g -pg -Wall -fmessage-length=0
 
-OBJS =		testfmm.o 
+SRCS=	matrix.cpp key.cpp point.cpp grid.cpp testfmm.cpp
+
+OBJS =	$(subst .cpp,.o,$(SRCS))
 
 LIBS =
 
